@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by opp_msgtool 6.0 from /home/hegde/workspace/main/Artery-C/src/artery/utility/AsioData.msg.
+// Generated file, do not edit! Created by opp_msgtool 6.0 from /home/chenjienan/Artery-C/src/artery/utility/AsioData.msg.
 //
 
 // Disable warnings about unused variables, empty switch stmts, etc:
@@ -150,8 +150,6 @@ void doParsimUnpacking(omnetpp::cCommBuffer *, T& t)
 
 }  // namespace omnetpp
 
-namespace artery {
-
 Register_Class(AsioData)
 
 AsioData::AsioData(const char *name, short kind) : ::omnetpp::cMessage(name, kind)
@@ -239,7 +237,7 @@ class AsioDataDescriptor : public omnetpp::cClassDescriptor
 
 Register_ClassDescriptor(AsioDataDescriptor)
 
-AsioDataDescriptor::AsioDataDescriptor() : omnetpp::cClassDescriptor(omnetpp::opp_typename(typeid(artery::AsioData)), "omnetpp::cMessage")
+AsioDataDescriptor::AsioDataDescriptor() : omnetpp::cClassDescriptor(omnetpp::opp_typename(typeid(AsioData)), "omnetpp::cMessage")
 {
     propertyNames = nullptr;
 }
@@ -503,8 +501,6 @@ void AsioDataDescriptor::setFieldStructValuePointer(omnetpp::any_ptr object, int
         default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'AsioData'", field);
     }
 }
-
-}  // namespace artery
 
 namespace omnetpp {
 
